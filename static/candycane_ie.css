@@ -1,0 +1,108 @@
+img { behavior : url(/static/iepngfix/iepngfix.htc)}
+img { border:solid 0px;margin:0;display:screen;}
+
+
+body {
+    color:#FFF;
+    background-color:black;
+ /*   position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;*/
+    margin:0px;
+    font-family:helvetica, arial, sans-serif;
+    font-size:10px;
+    overflow:none;
+}
+
+a {
+	color:yellow;
+}
+#footer a {
+color:black;
+}
+/*
+#main {
+    position:absolute;
+    height:420px;
+    bottom:99px;
+    left:0px;
+    right:0px;
+    
+    z-index:20;
+    overflow:none;
+}
+
+#footer {
+    background-image:url('/static/images/footer.png');
+    background-repeat:repeat-x;
+    position:absolute;
+    height:100px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+*/
+#page-container {
+	align:center;
+	position:relative;
+	bottom:0px;
+	
+}
+#page {
+	position:relative;
+	bottom:0px;
+	height:420px;
+	
+	
+}
+
+#menu, #page {
+	width:495px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu {
+	margin-top:15px;
+	text-align:center;
+}
+#menu_links {
+	width:240px;
+	float:left;
+}
+#menu_dots {
+	float:right;
+	width:224px;	
+}
+
+#menu_links img {
+	border:none;
+}
+
+#page .phone {
+	float:right;
+	bottom:-10;
+}
+#page .phone .sun {
+//	position:absolute;
+	bottom:0;
+	left :-120px;
+	z-index : -20;
+}
+#page .text {
+	width:240px;
+	float:left;
+}
+
+.errorlist {
+	color:yellow;
+
+}
+strong {
+	font-size:120%
+}
+
+jQuery {
+	display:none;
+}
