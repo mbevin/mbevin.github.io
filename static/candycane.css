@@ -1,0 +1,145 @@
+img { behavior : url(iepngfix/iepngfix.htc)}
+
+body {
+    color:#FFF;
+    background-color:black;
+/*    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin:0px;
+    */
+    font-family:helvetica, arial, sans-serif;
+    font-size:10px;
+
+}
+a {
+	color:yellow;
+}
+#footer a {
+color:black;
+}
+#main {
+	z-index:20;
+    overflow:none;
+
+    position:absolute;
+	height:420px;
+    
+    bottom:100px;
+    left:0px;
+    right:0px;
+}
+
+#footer {
+    background-image:url('images/footer.png');
+    background-repeat:repeat-x;
+    position:absolute;
+    height:100px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    
+}
+
+#page-container {
+	align:center;
+	position:relative;
+	bottom:0px;
+	
+}
+#page {
+	position:relative;
+	bottom:0px;
+	height:420px;
+	
+	
+}
+
+#page {
+	width:665px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu {
+	width:996px;
+	margin-left :auto;
+	margin-right:auto;
+}
+#menu {
+	margin-top:10px;
+}
+#menu_links {
+	text-align:left;
+	width:545px;
+	float:left;
+	padding-left:140px;
+}
+#menu_dots {
+	text-align:center;
+	float:left;
+	width:65px;	
+}
+#shipwreck_menu, #fling_menu {
+    margin-bottom:2px;	
+} 
+img {
+	border:none;
+    margin-bottom:0;
+}
+
+#page .phone {
+	float:right;
+	bottom:-10;
+}
+#page .phone .sun {
+	position:absolute;
+	bottom:0;
+	left :212px;
+	z-index : -1;
+}
+
+#page .phone-horiz {
+	float:right;
+	bottom:-10;
+}
+#page .phone-horiz img {
+    margin-left :100px;
+}
+#page .phone-horiz .sun {
+	position:absolute;
+	bottom:0;
+	left :52px;
+	z-index : -1;
+}
+#page .phone-horiz .phone_image {
+	position:absolute;
+	bottom:10px;
+	left :242px;
+	z-index : 0;
+}
+
+
+
+#page .text {
+	width:420px;
+	float:left;
+}
+
+#page .text.melodica {
+	width:280px;
+	float:left;
+}
+
+.errorlist {
+	color:yellow;
+
+}
+strong {
+	font-size:120%
+}
+
+jQuery {
+	display:none;
+}

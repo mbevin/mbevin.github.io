@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="facebook">
+    
+<!-- Mirrored from 46.101.200.75:8000/support/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Sep 2017 02:09:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="verify-v1" content="7fn5WmnM7T+K719cif7SLTqnKDB7CKizdhNeCZeS1pQ=" />
+        <title>
+        CandyCaneApps
+        
+- Support
+
+        </title>
+
+        <script type="text/javascript" src="../static/jquery-1.2.6.min.js"></script>
+        <script type="text/javascript" src="../static/candycane.js"></script>
+        <link type="text/css" rel="stylesheet" href="../static/candycane.css"></link>
+
+    </head>
+    <body>
+	
+        <div id="main"><div id="page-container">
+			<div id="page">
+				
+	&nbsp;<strong style="font-size:120%">Please contact us if you have any questions.</strong>
+	<br/><br/>
+	<form id="support_form" action="#" method="POST">
+		<div id="support_form_initial" >
+		<table valign="bottom" style="margin:0;padding:0"> <tr><th align="left"><label for="id_subscribe">Subscribe:</label></th><td align="right"></td></tr><tr><td colspan="2"><select name="subscribe" id="id_subscribe">
+<option value="1" selected="selected">Unknown</option>
+<option value="2">Yes</option>
+<option value="3">No</option>
+</select></td></tr>
+<tr><th align="left"><label for="id_email">Your Email:</label></th><td align="right"></td></tr><tr><td colspan="2"><input id="id_email" type="text" name="email" maxlength="75" /></td></tr>
+<tr><th align="left"><label for="id_topic">Topic:</label></th><td align="right"></td></tr><tr><td colspan="2"><select name="topic" id="id_topic">
+<option value="Please Select">Please Select</option>
+<option value="Fling">Fling</option>
+<option value="Melodica">Melodica</option>
+<option value="Shipwreck">Shipwreck</option>
+<option value="Fuzzle">Fuzzle</option>
+<option value="All Fours">All Fours</option>
+<option value="Other">Other</option>
+</select></td></tr>
+<tr><th align="left"><label for="id_question">Question:</label></th><td align="right"></td></tr><tr><td colspan="2"><textarea id="id_question" rows="10" cols="40" name="question"></textarea></td></tr><tr><td/><td allign="rigth"><input style="float:right" type="submit" value="send email"/></td></tr></table>
+		</div>
+		<div class="jquery" style="display:none">
+        	$(parent).submit(function() {
+				$(parent).hide();
+				$("#processing").show();
+				form = this;
+				data = {};
+				data.topic = $("*[name=topic]",form).attr("value");
+				data.email = $("*[name=email]",form).attr("value");
+                                data.subscribe = $("*[name=subscribe]",form).attr("checked");
+				data.question = $("textarea",form).attr("value");
+				$.post("submit/", data,
+				function(data, text_status){
+				    $(form).html(data);
+					$("#processing").hide();
+				    $(parent).show();
+				});
+				return false;
+			});
+			$("#support_menu").attr("src", "/static/images/support_yellow.jpeg");
+			
+        </div>
+    </form>
+	<div id="processing" style="display:none">processing...</div>
+
+			</div>
+        </div></div>
+
+
+        
+        <div id="footer">
+			<div id="menu">
+				<div id="menu_links">
+                    <a href="../fuzzle/index.html" class="menu_item">
+                        <img src="../static/images/fuzzle_white.png" alt="FUZZLE" id="fuzzle_menu"/>
+                    </a>
+                    <img src="../static/images/ball_menu.jpg"/>
+                    <a href="../fling/index.html" class="menu_item">
+                        <img src="../static/images/fling_white.gif" alt="FLING" id="fling_menu"/>
+                    </a>
+                    <img src="../static/images/ball_menu.jpg"/>
+                    <a href="../melodica/index.html" class="menu_item">
+                        <img src="../static/images/melodica_white.png" alt="MELODICA" id="melodica_menu"/>
+                    </a>
+                    <img src="../static/images/ball_menu.jpg"/>
+                    <a href="../shipwreck/index.html" class="shipwreck_item">
+                        <img src="../static/images/shipwreck_white.gif" alt="SHIPWRECK" id="shipwreck_menu"/>
+                    </a>
+					<img src="../static/images/ball_menu.jpg"/>
+					<a href="index.html" class="menu_item">
+						<img src="../static/images/support_white.jpg" alt="SUPPORT"  id="support_menu"/>
+					</a>
+					<img src="../static/images/ball_menu.jpg"/>
+					<a href="../candycane/index.html" class="menu_item">
+						<img src="../static/images/candy_cane_white.jpg" alt="CANDYCANE"  id="candycane_menu"/>
+					</a>
+					<img src="../static/images/ball_menu.jpg"/>
+					<a href="http://candycaneapps.wordpress.com/" class="menu_item ">
+						<img src="../static/images/blog_white.jpg" alt="blog"  id="blog_menu"/>
+					</a>
+<!--
+                    <img src="/static/images/ball_menu.jpeg"/>
+                    <a href="/forum/" class="menu_item">
+                            <img src="/static/images/forum_white.gif" alt="forum"  id="forum_menu"/>
+                    </a>
+-->
+
+                </div>
+				<div id="menu_dots">
+					
+				</div>			
+			</div>
+        </div>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-11351032-4");
+                pageTracker._trackPageview();
+                } catch(err) {}</script>
+    </body>
+
+<!-- Mirrored from 46.101.200.75:8000/support/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Sep 2017 02:09:31 GMT -->
+</html>
+
