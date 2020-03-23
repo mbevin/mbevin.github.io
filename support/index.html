@@ -25,27 +25,36 @@
 				
 	&nbsp;<strong style="font-size:120%">Please contact us if you have any questions.</strong>
 	<br/><br/>
-	<form id="support_form" action="#" method="POST">
+	<form id="support_form" action="https://app.99inbound.com/api/e/UJKzkGis" method="POST" target="_blank">
 		<div id="support_form_initial" >
-		<table valign="bottom" style="margin:0;padding:0"> <tr><th align="left"><label for="id_subscribe">Subscribe:</label></th><td align="right"></td></tr><tr><td colspan="2"><select name="subscribe" id="id_subscribe">
-<option value="1" selected="selected">Unknown</option>
-<option value="2">Yes</option>
-<option value="3">No</option>
-</select></td></tr>
-<tr><th align="left"><label for="id_email">Your Email:</label></th><td align="right"></td></tr><tr><td colspan="2"><input id="id_email" type="text" name="email" maxlength="75" /></td></tr>
-<tr><th align="left"><label for="id_topic">Topic:</label></th><td align="right"></td></tr><tr><td colspan="2"><select name="topic" id="id_topic">
-<option value="Please Select">Please Select</option>
-<option value="Fling">Fling</option>
-<option value="Melodica">Melodica</option>
-<option value="Shipwreck">Shipwreck</option>
-<option value="Fuzzle">Fuzzle</option>
-<option value="All Fours">All Fours</option>
-<option value="Other">Other</option>
-</select></td></tr>
-<tr><th align="left"><label for="id_question">Question:</label></th><td align="right"></td></tr><tr><td colspan="2"><textarea id="id_question" rows="10" cols="40" name="question"></textarea></td></tr><tr><td/><td allign="rigth"><input style="float:right" type="submit" value="send email"/></td></tr></table>
+		<table valign="bottom" style="margin:0;padding:0"> <tr><th align="left"><label for="id_subscribe">Subscribe:</label></th><td align="right"></td></tr>
+<!--
+			<tr><td colspan="2">
+			<select name="subscribe" id="id_subscribe">
+				<option value="1" selected="selected">Unknown</option>
+				<option value="2">Yes</option>
+				<option value="3">No</option>
+			</select></td></tr>
+-->
+			<tr><th align="left"><label for="id_email">Your Email:</label></th><td align="right"></td></tr>
+			<tr><td colspan="2"><input id="id_email" type="text" name="email" maxlength="75" /></td></tr>
+			<tr><th align="left"><label for="id_topic">Topic:</label></th><td align="right"></td></tr>
+			<tr><td colspan="2"><select name="topic" id="id_topic">
+				<option value="Please Select">Please Select</option>
+				<option value="Fling">Fling!</option>
+				<option value="Melodica">Melodica</option>
+				<option value="Shipwreck">Shipwreck</option>
+				<option value="Fuzzle">Fuzzle</option>
+				<option value="All Fours">All Fours</option>
+				<option value="Other">Other</option>
+			</select></td></tr>
+			<tr><th align="left"><label for="id_question">Question:</label></th><td align="right"></td></tr>
+			<tr><td colspan="2"><textarea id="id_question" rows="10" cols="40" name="question"></textarea></td></tr>
+			<tr><td/><td allign="rigth"><input style="float:right" type="submit" value="send email"/></td></tr>
+		</table>
 		</div>
 		<div class="jquery" style="display:none">
-        	$(parent).submit(function() {
+        	/*$(parent).submit(function() {
 				$(parent).hide();
 				$("#processing").show();
 				form = this;
@@ -61,10 +70,9 @@
 				    $(parent).show();
 				});
 				return false;
-			});
+			});*/
 			$("#support_menu").attr("src", "/static/images/support_yellow.jpeg");
-			
-        </div>
+      </div>
     </form>
 	<div id="processing" style="display:none">processing...</div>
 
